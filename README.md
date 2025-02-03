@@ -1,2 +1,2 @@
 # Portfolio-Website
-it's about creating a portfolio website to showcase myself
+"This is my portfolio website to showcase my projects and skills."
