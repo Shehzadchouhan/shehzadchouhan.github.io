@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohd Shehzad | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Welcome to MY Portfolio</h1>
-    <!-- navigation -->
-    <aside class="sidebar">
+    <!-- Sidebar Toggle Button -->
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <h2>Portfolio</h2>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="toggleSidebar()">Home</a></li>
+                <li><a href="#about" onclick="toggleSidebar()">About</a></li>
+                <li><a href="#projects" onclick="toggleSidebar()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
             </ul>
         </nav>
     </aside>
-    <!-- Profile -->
-    <section id="home" class="hero">
-        <img src="profile_pic.jpg" width="180px" alt="Mohd Shezad" class="profile_pic">
-        <h1>Mohd Shehzad</h1>
-        <p>I'm a B.Tech Computer Science student, passionate about development and learning.</p>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project_list">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Short description of the project.</p>
-            </div>
-            <div class="project_list">
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Short description of the project.</p>
-                </div>
-                <div class="project_list">
-                    <div class="project">
-                        <h3>Project 3</h3>
-                        <p>Short description of the project.</p>
-                    </div>
-                </div>
-    </section>
-    <!-- About me -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm <strong>Mohd Shehzad</strong>, a passionate <strong>B.Tech CSE student</strong> in my 2nd year. I love building <strong>web applications</strong> and solving coding challenges. My skills include <strong>HTML, CSS, JavaScript, and C++</strong>, and I'm currently improving my <strong>full-stack development</strong> skills. <br> I'm seeking an <strong>internship</strong> to gain hands-on experience and contribute to real-world projects.</p>
-        </div>
-    </section>
-    
+    <!-- Main Content -->
+    <div class="content" id="content">
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is the home section.</p>
+        </section>
+        
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hi, I'm <strong>Mohd Shehzad</strong>, a passionate <strong>B.Tech CSE student</strong> in my 2nd year. I
+                love building <strong>web applications</strong> and solving coding challenges. My skills include
+                <strong>HTML, CSS, JavaScript, and C++</strong>, and I'm currently improving my <strong>full-stack
+                    development</strong> skills. <br> I'm seeking an <strong>internship</strong> to gain hands-on
+                experience and contribute to real-world projects.
+            </p>
+        </section>
+        
+        <section id="projects">
+            <h1>My Projects</h1>
+            <p>Project details go here.</p>
+        </section>
+        
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Contact details go here.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
