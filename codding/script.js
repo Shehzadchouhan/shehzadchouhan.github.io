@@ -25,3 +25,13 @@ document.addEventListener("click", function (e) {
         sidebar.classList.remove("active");
     }
 });
+
+
+
+document.addEventListener("mousemove", function (e) {
+    const profileImg = document.querySelector(".profile_pic");
+    const moveX = (e.clientX - window.innerWidth / 2) / 50;
+    const moveY = (e.clientY - window.innerHeight / 2) / 50;
+    
+    profileImg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});

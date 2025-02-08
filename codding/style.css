@@ -8,6 +8,58 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
+/* Waving Hand Animation */
+.wave {
+  display: inline-block;
+  animation: wave-animation 1.5s infinite;
+}
+
+
+@keyframes wave-animation {
+  0%, 100% { transform: rotate(0); }
+  20% { transform: rotate(-15deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(5deg); }
+}
+
+/* Profile Image Cursor Movement Effect */
+.profile_pic {
+  transition: transform 0.1s ease-out;
+  border-radius: 223px;
+}
+
+/* Flexbox for Layout */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px; /* Space between image and text */
+  text-align: left;
+  padding: 50px;
+}
+
+/* Adjust the left side (Image) */
+.intro-left {
+  flex: 1; /* Takes 50% width */
+  display: flex;
+  justify-content: center; /* Center the image */
+}
+
+/* Adjust the right side (Text) */
+.intro-right {
+  flex: 1; /* Takes 50% width */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .intro-container {
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
+
 /* Fade-in effect */
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -96,7 +148,7 @@ body {
 
 /* Sections */
 section {
-  padding: 50px;
+  padding: 225px;
   margin-bottom: 30px;
   background: #222;
   color: white;

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohd Shehzad | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Sidebar Toggle Button -->
     <button class="menu-btn" onclick="toggleSidebar()">☰</button>
-    
+
     <!-- Sidebar Navigation -->
     <aside class="sidebar" id="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">✖</button>
@@ -25,11 +27,25 @@
     </aside>
 
     <!-- Main Content -->
-    <div class="content" id="content">
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is the home section.</p>
-        </section>
+    <section id="home" class="hero">
+        <div class="intro-container">
+            <div class="intro-left">
+                <img src="profile_pic.jpg" width="180px" alt="Mohd Shehzad" class="profile_pic">
+            </div>
+            <div class="intro-right">
+                <h1>
+                    <span class="wave">👋</span>
+                    Hi, I'm Mohd Shehzad 
+                </h1>
+                <p>Passionate Web Developer & Tech Enthusiast.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
         
         <section id="about">
             <h1>About Me</h1>
@@ -40,12 +56,12 @@
                 experience and contribute to real-world projects.
             </p>
         </section>
-        
+
         <section id="projects">
             <h1>My Projects</h1>
             <p>Project details go here.</p>
         </section>
-        
+
         <section id="contact">
             <h1>Contact</h1>
             <p>Contact details go here.</p>
@@ -54,4 +70,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
