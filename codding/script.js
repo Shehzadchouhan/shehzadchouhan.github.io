@@ -35,3 +35,15 @@ document.addEventListener("mousemove", function (e) {
     
     profileImg.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var typed = new Typed("#typed-text", {
+        strings: ["Passionate Web Developer | Tech Enthusiast.."],
+        typeSpeed: 70, // Speed of typing
+        backSpeed: 60, // Speed of erasing
+        backDelay: 1000, // Delay before erasing
+        loop: true // Repeat animation infinitely
+    });
+});

@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  background: #18181a;
+  background: #2d2d2d;
   color: white;
   margin: 0;
   padding: 0;
@@ -150,7 +150,7 @@ body {
 section {
   padding: 225px;
   margin-bottom: 30px;
-  background: #222;
+  background: #121212;
   color: white;
   border-radius: 8px;
   text-align: center;
@@ -170,4 +170,56 @@ section {
       font-size: 20px;
       padding: 10px;
   }
+}
+
+
+
+/* for about scetion */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10%;
+  background-color: #121212;
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.about-image img {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+.about-content {
+  margin-left: 40px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #34ebba;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #34ebba;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #28c8a5;
 }
