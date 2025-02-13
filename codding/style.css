@@ -291,3 +291,126 @@ section {
 .creative{
   text-align: justify;
 }
+
+
+/* For contact section */
+#contact {
+  background: #000; /* Keeps the dark theme */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-container {
+  width: 80%;
+  margin: auto;
+  max-width: 900px;
+  /* backdrop-filter: blur(10px); Glass effect */
+  background: rgba(255, 255, 255, 0.05); /* Transparent glassy background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-container p {
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff00cc;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 0, 204, 0.4);
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+.social-icons a {
+  display: inline-block;
+  color: white;
+  font-size: 22px;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.social-icons a:nth-child(1):hover { color: #0077b5; } /* LinkedIn (blue) */
+.social-icons a:nth-child(2):hover { color: #ffffff; } /* GitHub (white) */
+.social-icons a:nth-child(3):hover { color: #E1306C; } /* Instagram (pink-red) */
+
+.input-group {
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-group input,
+.input-group textarea {
+  padding-left: 40px; /* Space for the icon */
+}
