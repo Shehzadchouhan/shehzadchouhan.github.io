@@ -15,11 +15,11 @@
 
 <body>
     <!-- Sidebar Toggle Button -->
-    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    <button class="glow-button"  class="menu-btn" onclick="toggleSidebar()">☰</button>
 
     <!-- Sidebar Navigation -->
     <aside class="sidebar" id="sidebar">
-        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <button class="glow-button" class="close-btn" onclick="toggleSidebar()">✖</button>
         <h2>Portfolio</h2>
         <nav>
             <ul>
@@ -53,7 +53,7 @@
 
 
 
-    <section id="about" class="about-section">
+    <section id="about" class="about-section glass">
         <div class="about-container">
             <div class="about-image">
                 <img src="2.svg" alt="About Me Image">
@@ -79,7 +79,7 @@
 
 
 
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section glass"  class="glass reveal>
         <div class="container">
             <h2 class="section-title"><u>My Projects</u> </h2>
             <div class="creative">
@@ -141,7 +141,7 @@
 
 
     <!-- for contact section -->
-    <section id="contact">
+    <section id="contact" class="glass">
         <div class="contact-container">
           <h2><u>Contact With Me</u> </h2>
           <p>If you have any questions or concerns, feel free to reach out. I am open to work opportunities that align with my skills and interests.</p>
@@ -163,7 +163,7 @@
                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
               </div>
           
-              <button type="submit">Send Message ✉️</button>
+              <button class="glow-button" type="submit">Send Message ✉️</button>
             </form>
           </div>
           

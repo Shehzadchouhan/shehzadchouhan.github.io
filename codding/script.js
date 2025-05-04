@@ -47,3 +47,21 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true // Repeat animation infinitely
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".reveal");
+    
+    function revealSections() {
+        sections.forEach(section => {
+            const position = section.getBoundingClientRect().top;
+            if (position < window.innerHeight - 100) {
+                section.classList.add("visible");
+            }
+        });
+    }
+    
+    window.addEventListener("scroll", revealSections);
+    revealSections();
+});

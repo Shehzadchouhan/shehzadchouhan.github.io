@@ -1,12 +1,67 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-  background: #2d2d2d;
-  color: white;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: white;
+    font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   animation: fadeIn 1s ease-in-out;
 }
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+h2 {
+  color: #fff;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff;
+}
+
+.glow-button {
+  background: transparent;
+  border: 2px solid #00eaff;
+  color: #00eaff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+  background: #00eaff;
+  color: #000;
+  box-shadow: 0 0 15px #00eaff;
+}
+
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 238, 255, 0.5);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Waving Hand Animation */
 .wave {
