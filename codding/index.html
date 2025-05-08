@@ -1,191 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohd Shehzad | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohd Shehzad | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
-
 <body>
-    <!-- Sidebar Toggle Button -->
-    <button class="glow-button"  class="menu-btn" onclick="toggleSidebar()">☰</button>
-
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar" id="sidebar">
-        <button class="glow-button" class="close-btn" onclick="toggleSidebar()">✖</button>
-        <h2>Portfolio</h2>
-        <nav>
-            <ul>
-                <li><a href="#home" onclick="toggleSidebar()">Home</a></li>
-                <li><a href="#about" onclick="toggleSidebar()">About</a></li>
-                <li><a href="#projects" onclick="toggleSidebar()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <!-- Main Content -->
-    <section id="home" class="hero">
-        <div class="intro-container">
-            <div class="intro-left">
-                <img src="profile_pic.jpg" width="180px" alt="Mohd Shehzad" class="profile_pic">
-            </div>
-            <div class="intro-right">
-                <h1>
-                    <span class="wave">👋</span>
-                    Hi, I'm Mohd Shehzad
-                </h1>
-                </h1>
-                <p><span id="typed-text"></span></p> <!-- This will show typing effect -->
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section id="about" class="about-section glass">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="2.svg" alt="About Me Image">
-            </div>
-            <div class="about-content">
-                <h2> ⚡<u>About Me</u></h2>
-                <p>
-                    Hey there! I'm <span class="highlight">Mohd Shehzad</span>, and I've been passionate about computers
-                    since I was young. Currently, I'm a **B.Tech Computer Science student** exploring the world of
-                    **technology** and **web development**.
-                    I specialize in **MERN stack development** and love creating innovative digital solutions.
-                    My journey is all about learning, building, and refining my skills
-                    When I'm not coding, I enjoy **cricket**, binge-watching **tech videos**, and exploring new ideas in
-                    **software development**. 🚀
-                </p>
-                <div class="resume-btn">
-                    <a href="resume.pdf" class="btn">See Resume</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="projects" class="projects-section glass"  class="glass reveal>
-        <div class="container">
-            <h2 class="section-title"><u>My Projects</u> </h2>
-            <div class="creative">
-                <h2>💻 All Creative Works.</h2>
-                <p>Here's some of my projects that I have worked on.</p>
-            </div>
+  <header>
+    <div class="left">Mohd Shehzad</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
             
-            <!-- Your project cards go here -->
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Project Title 1</h3>
-                        <p class="project-description">Brief description of Project 1.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eum dolorem, non quis,
-                            nesciunt id consequuntur rerum itaque voluptatum laboriosam perferendis. Illum qui,
-                        </p>
-                        <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank"
-                            rel="noopener">Physics Experiment Website</a>
-                        <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank"
-                            rel="noopener">GitHub Repo</a>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Project Title 2</h3>
-                        <p class="project-description">Brief description of Project 2.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eum dolorem, non quis,
-                            nesciunt id consequuntur rerum itaque voluptatum laboriosam perferendis. Illum qui,
-                        </p>
-                        <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank"
-                            rel="noopener">Physics Experiment Website</a>
-                        <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank"
-                            rel="noopener">GitHub Repo</a>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Project Title 3</h3>
-                        <p class="project-description">Brief description of Project 3.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eum dolorem, non quis,
-                            nesciunt id consequuntur rerum itaque voluptatum laboriosam perferendis. Illum qui,
-                        </p>
-                        <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank"
-                            rel="noopener">Physics Experiment Website</a>
-                        <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank"
-                            rel="noopener">GitHub Repo</a>
-                    </div>
-                </div>
-                <!-- Repeat similar blocks for other projects -->
-            </div>
+          </ul>
+           
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="intro-container">
+      <!-- Left Side Content -->
+      <div class="intro-left">
+        <h2>Hello friend!</h2>
+        <h1>I am <span class="highlight">Mohd Shehzad</span></h1>
+        <h3>A Mighty Avenger</h3>
+        <p>🚀 A passionate Software Developer based in Faisalabad, Pakistan.</p>
+        <p>⚡ Exploring opportunities and side projects.</p>
+        <p>💻 My main tech stack currently is MERN in combination with Tailwind CSS and TypeScript.</p>
+  
+        <div class="social-links">
+          <a href="https://github.com/ShehzadChouhan" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/shehzad23" target="_blank">LinkedIn</a>
         </div>
-    </section>
-
-
-    <!-- for contact section -->
-    <section id="contact" class="glass">
-        <div class="contact-container">
-          <h2><u>Contact With Me</u> </h2>
-          <p>If you have any questions or concerns, feel free to reach out. I am open to work opportunities that align with my skills and interests.</p>
-          
-          <div class="contact-form">
-            <form action="#" method="POST">
-              <div class="input-group">
-                <i class="fas fa-user"></i>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-              </div>
-          
-              <div class="input-group">
-                <i class="fas fa-envelope"></i>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-              </div>
-          
-              <div class="input-group">
-                <i class="fas fa-comment"></i>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-              </div>
-          
-              <button class="glow-button" type="submit">Send Message ✉️</button>
-            </form>
-          </div>
-          
-      
-          <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> shehzadchouhan260@gmail.com</p>
-            <p><i class="fas fa-phone"></i> +91 9988059285</p>
-            <p><i class="fas fa-map-marker-alt"></i> Malerkotla(148023),Punjab, India</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/shehzad23" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/ShehzadChouhan" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/shehzad_speaks?igsh=NGdrY3d6dXA2aDJs" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-              </div>
-              
-          </div>
-        </div>
-      </section>
-      
-
+      </div>
+  <!-- <img src="assets/profile_pic.jpg" alt=""> -->
+      <!-- Right Side Profile Image -->
+      <div class="intro-right">
+        <img src="assets/profile_pic.jpg" width="180px" alt="Mohd Shehzad" class="profile_pic" />
+      </div>
     </div>
+  </section>
+  
 
-    <script src="script.js"></script>
+  <!-- Divider -->
+  <hr class="section-divider" />
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="assets/2.svg" alt="About Me Image" />
+    </div>
+    <div>
+      <h2>⚡<u>About Me</u></h2>
+      <p>
+        Hey there! I'm <span class="highlight">Mohd Shehzad</span>, and I've been passionate about computers
+        since I was young. Currently, I'm a <strong>B.Tech Computer Science student</strong> exploring the world of
+        <strong>technology</strong> and <strong>web development</strong>.
+        I specialize in <strong>MERN stack development</strong> and love creating innovative digital solutions.
+        My journey is all about learning, building, and refining my skills.
+        When I'm not coding, I enjoy <strong>cricket</strong>, binge-watching <strong>tech videos</strong>, and exploring new ideas in
+        <strong>software development</strong>. 🚀
+      </p>
+      <button onclick="window.open('your-resume-link.pdf')" target="_blank">📄 View Resume</button>
+    </div>
+  </section>
+  
+  <!-- Divider -->
+  <hr class="section-divider" />
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title"><u>My Projects</u></h2>
+      <div class="creative">
+        <h2>💻 All Creative Works.</h2>
+        <p>Here's some of my projects that I have worked on.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project Cards -->
+        <div class="project-card">
+          <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image"/>
+          <div class="project-content">
+            <h3 class="project-title">Project Title 1</h3>
+            <p class="project-description">Brief description of Project 1...</p>
+            <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank">Live Site</a>
+            <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image"/>
+          <div class="project-content">
+            <h3 class="project-title">Project Title 1</h3>
+            <p class="project-description">Brief description of Project 1...</p>
+            <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank">Live Site</a>
+            <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image"/>
+          <div class="project-content">
+            <h3 class="project-title">Project Title 1</h3>
+            <p class="project-description">Brief description of Project 1...</p>
+            <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank">Live Site</a>
+            <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <hr class="section-divider" />
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-container">
+      <h2><u>Keep in Touch</u></h2>
+      <p>My inbox is always open. Whether you have a question or just want to talk more about your projects!<br>
+        Feel free to mail me about any relevant job updates.</p>
+  
+      <div class="social-icons">
+        <a href="mailto:shehzadchouhan260@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/shehzad23" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ShehzadChouhan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/shehzad_speaks?igsh=NGdrY3d6dXA2aDJs" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="script.js"></script>
 </body>
-
 </html>
