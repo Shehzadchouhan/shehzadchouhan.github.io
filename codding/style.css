@@ -1,5 +1,6 @@
-body{
-background-color: #3b1665;
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0; /* Light grey text for readability */
 }
 
 /* navigation */
@@ -7,7 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f172a; /* dark blue/navy */
+  background-color: #111; /* Dark background for navigation */
   padding: 1rem 2rem;
   color: #ffffff;
   position: sticky;
@@ -18,7 +19,7 @@ header {
 header .left {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #38bdf8; /* sky blue */
+  color: #9b00ff; /* Neon Purple */
 }
 
 nav ul {
@@ -37,7 +38,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: #38bdf8; /* sky blue hover effect */
+  color: #9b00ff; /* Neon Purple hover effect */
 }
 
 /* Optional: underline effect on hover */
@@ -45,7 +46,7 @@ nav ul li::after {
   content: '';
   display: block;
   height: 2px;
-  background: #38bdf8;
+  background: #9b00ff; /* Neon Purple */
   width: 0%;
   transition: width 0.3s ease;
   position: absolute;
@@ -57,14 +58,13 @@ nav ul li:hover::after {
   width: 100%;
 }
 
-
-
-/* hero section */
+/* HERO SECTION */
 .hero {
   padding: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0a0a0a; /* Dark background */
 }
 
 .intro-container {
@@ -73,63 +73,106 @@ nav ul li:hover::after {
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
+  align-items: center;
 }
 
 .intro-left {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
+  padding-right: 20px;
 }
 
-.intro-left h2, .intro-left h3, .intro-left h1 {
-  margin-bottom: 0.5rem;
+.intro-left h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  color: #9b00ff; /* Neon Purple */
 }
 
-.highlight {
-  color: #007bff;
+.intro-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.4rem;
   font-weight: bold;
+  color: #e0e0e0; /* Light grey for main heading */
+}
+
+.intro-left h1 .highlight {
+  color: #9b00ff; /* Neon Purple */
 }
 
 .typing-text {
-  font-size: 1.25rem;
-  color: #333;
-  height: 1.5rem;
+  font-size: 1.2rem;
   font-family: monospace;
+  color: #9b00ff; /* Neon Purple */
+  min-height: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.intro-left p {
+  margin: 0.5rem 0;
+  color: #d1d1d1; /* Light grey for description */
 }
 
 .social-links {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .social-links a {
+  display: inline-block;
+  padding: 10px 20px;
   margin-right: 1rem;
+  background-color: #9b00ff; /* Neon Purple */
+  color: white;
+  border-radius: 25px;
   text-decoration: none;
-  color: #333;
+  transition: background 0.3s;
   font-weight: 500;
 }
 
-.social-links i {
-  margin-right: 6px;
+.social-links a:hover {
+  background-color: #7a00cc; /* Darker Neon Purple on hover */
 }
 
 .intro-right img {
-  width: 300px;
+  width: 280px;
   height: auto;
   border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Subtle shadow */
 }
 
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-/* About Section Styling */
+  .intro-left {
+    padding-right: 0;
+  }
+
+  .social-links a {
+    margin-top: 10px;
+  }
+}
+
 .about-section {
   display: flex;
-  flex-direction: row-reverse; /* This puts the image on the right */
+  flex-direction: row; /* Changed from column-reverse to row */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background-color: #121212; /* Dark background for section */
+  text-align: left;
 }
 
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
 .about-image img {
   width: 350px;
@@ -137,28 +180,33 @@ nav ul li:hover::after {
   height: auto;
 }
 
+.about-section > div:not(.about-image) {
+  flex: 1;
+  min-width: 300px;
+}
+
 .about-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #6C63FF;
+  color: #9b00ff; /* Neon Purple */
 }
 
 .about-section p {
   font-size: 16px;
   line-height: 1.8;
-  color: #333;
+  color: #d1d1d1; /* Light grey */
 }
 
 .about-section .highlight,
 .about-section strong {
-  color: #6C63FF;
+  color: #9b00ff; /* Neon Purple */
   font-weight: bold;
 }
 
 .about-section button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #6C63FF;
+  margin-top: -11px;
+  padding: 10px 11px;
+  background-color: #9b00ff; /* Neon Purple */
   color: white;
   border: none;
   border-radius: 8px;
@@ -168,5 +216,161 @@ nav ul li:hover::after {
 }
 
 .about-section button:hover {
-  background-color: #574b90;
+  background-color: #7a00cc; /* Darker Neon Purple on hover */
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #111; /* Dark background for section */
+  padding: 60px 20px;
+}
+
+.projects-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #9b00ff; /* Neon Purple */
+}
+
+.creative {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.creative h2 {
+  font-size: 28px;
+  color: #e0e0e0; /* Light grey for titles */
+  margin-bottom: 10px;
+}
+
+.creative p {
+  font-size: 16px;
+  color: #d1d1d1; /* Light grey */
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.project-card {
+  background: #1f1f1f; /* Dark grey background */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #9b00ff; /* Neon Purple */
+}
+
+.project-description {
+  font-size: 14px;
+  color: #d1d1d1; /* Light grey */
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #9b00ff; /* Neon Purple */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #7a00cc; /* Darker Neon Purple */
+}
+
+/* Explore More Button */
+.explore-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.explore-more a {
+  font-size: 16px;
+  color: #9b00ff; /* Neon Purple */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid #9b00ff; /* Neon Purple border */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.explore-more a:hover {
+  background-color: #9b00ff; /* Neon Purple hover */
+  color: white;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #111; /* Dark background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #9b00ff; /* Neon Purple */
+}
+
+#contact p {
+  font-size: 16px;
+  color: #d1d1d1; /* Light grey */
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #9b00ff; /* Neon Purple */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #7a00cc; /* Darker Neon Purple */
+  transform: scale(1.2);
 }

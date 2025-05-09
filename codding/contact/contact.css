@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2 {
+  color: #c084fc;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #c084fc;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  color: #c084fc;
+  margin-bottom: 15px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 12px;
+  margin-bottom: 15px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.contact-form input:disabled,
+.contact-form textarea:disabled {
+  color: #777;
+  background-color: #111;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background-color: #c084fc;
+  color: #000;
+  font-weight: bold;
+  cursor: not-allowed;
+  border-radius: 6px;
+}
+
+.contact-form .note {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Keep in Touch */
+.keep-in-touch {
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.keep-in-touch h2 {
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+.keep-in-touch p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #c084fc;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
