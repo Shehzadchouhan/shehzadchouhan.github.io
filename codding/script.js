@@ -1,5 +1,5 @@
 const typingElement = document.getElementById("typing");
-const roles = ["MERN Stack Developer", "Future Engineer", "Video Editor", "Problem Solver"];
+const roles = ["Software Developer", "Future Engineer", "Video Editor", "Problem Solver","The coder","Enthusiast Student"];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

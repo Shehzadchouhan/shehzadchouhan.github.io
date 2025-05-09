@@ -79,6 +79,9 @@ body {
   cursor: not-allowed;
   border-radius: 6px;
 }
+.contact-form button:hover{
+  cursor: pointer;
+}
 
 .contact-form .note {
   font-size: 0.9rem;

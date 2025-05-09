@@ -1,6 +1,7 @@
 body {
   background-color: #0a0a0a;
-  color: #e0e0e0; /* Light grey text for readability */
+  color: #e0e0e0;
+  /* Light grey text for readability */
 }
 
 /* navigation */
@@ -8,8 +9,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111; /* Dark background for navigation */
-  padding: 1rem 2rem;
+  background-color: #111;
+  /* Dark background for navigation */
+  padding: 0.5rem 2rem;
   color: #ffffff;
   position: sticky;
   top: 0;
@@ -17,9 +19,116 @@ header {
 }
 
 header .left {
-  font-size: 1.5rem;
+  font-size: 1em;
   font-weight: bold;
-  color: #9b00ff; /* Neon Purple */
+  font-family: monospace;
+  color: #f9f7fa;
+  text-transform: uppercase;
+  animation: glitch-animation 2s infinite;
+}
+
+.left::before,
+.left::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  background: black;
+}
+
+.left::before {
+  left: 2px;
+  text-shadow: -2px 0 red;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch-anim-2 2s infinite linear alternate-reverse;
+}
+
+.left::after {
+  left: -2px;
+  text-shadow: -2px 0 blue;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch-anim-3 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-animation {
+  0% {
+    transform: none;
+  }
+
+  20% {
+    transform: skew(0.5deg, 0.5deg);
+  }
+
+  40% {
+    transform: skew(-0.5deg, -0.5deg);
+  }
+
+  60% {
+    transform: skew(0.8deg, -0.8deg);
+  }
+
+  80% {
+    transform: skew(-1deg, 1deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    clip: rect(42px, 9999px, 44px, 0);
+  }
+
+  5% {
+    clip: rect(12px, 9999px, 15px, 0);
+  }
+
+  10% {
+    clip: rect(85px, 9999px, 90px, 0);
+  }
+
+  15% {
+    clip: rect(5px, 9999px, 8px, 0);
+  }
+
+  20% {
+    clip: rect(65px, 9999px, 67px, 0);
+  }
+
+  100% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+}
+
+@keyframes glitch-anim-3 {
+  0% {
+    clip: rect(82px, 9999px, 85px, 0);
+  }
+
+  5% {
+    clip: rect(18px, 9999px, 20px, 0);
+  }
+
+  10% {
+    clip: rect(55px, 9999px, 58px, 0);
+  }
+
+  15% {
+    clip: rect(25px, 9999px, 27px, 0);
+  }
+
+  20% {
+    clip: rect(90px, 9999px, 92px, 0);
+  }
+
+  100% {
+    clip: rect(0, 9999px, 0, 0);
+  }
 }
 
 nav ul {
@@ -37,8 +146,19 @@ nav ul li {
   transition: color 0.3s ease;
 }
 
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 nav ul li:hover {
-  color: #9b00ff; /* Neon Purple hover effect */
+  color: #9b00ff;
+  /* Neon Purple hover effect */
+}
+
+nav ul li a:hover {
+  color: #9b00ff;
+  /* Neon Purple hover effect */
 }
 
 /* Optional: underline effect on hover */
@@ -46,7 +166,8 @@ nav ul li::after {
   content: '';
   display: block;
   height: 2px;
-  background: #9b00ff; /* Neon Purple */
+  background: #9b00ff;
+  /* Neon Purple */
   width: 0%;
   transition: width 0.3s ease;
   position: absolute;
@@ -64,7 +185,8 @@ nav ul li:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0a0a0a; /* Dark background */
+  background-color: #0a0a0a;
+  /* Dark background */
 }
 
 .intro-container {
@@ -85,31 +207,37 @@ nav ul li:hover::after {
 .intro-left h2 {
   font-size: 1.5rem;
   margin-bottom: 0.4rem;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
 }
 
 .intro-left h1 {
   font-size: 2.5rem;
   margin-bottom: 0.4rem;
   font-weight: bold;
-  color: #e0e0e0; /* Light grey for main heading */
+  color: #e0e0e0;
+  /* Light grey for main heading */
 }
 
 .intro-left h1 .highlight {
-  color: #9b00ff; /* Neon Purple */
+  color: whitesmoke;
+  /* Neon Purple */
 }
 
 .typing-text {
   font-size: 1.2rem;
   font-family: monospace;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
   min-height: 1.5em;
   margin-bottom: 1rem;
 }
 
 .intro-left p {
   margin: 0.5rem 0;
-  color: #d1d1d1; /* Light grey for description */
+  color: #d1d1d1;
+  /* Light grey for description */
+  font-size: 11px;
 }
 
 .social-links {
@@ -118,25 +246,29 @@ nav ul li:hover::after {
 
 .social-links a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 2px 6px;
   margin-right: 1rem;
-  background-color: #9b00ff; /* Neon Purple */
+  background-color: #9b00ff;
+  /* Neon Purple */
   color: white;
   border-radius: 25px;
   text-decoration: none;
   transition: background 0.3s;
-  font-weight: 500;
+  font-weight: 12200;
+  font-size: 12px;
 }
 
 .social-links a:hover {
-  background-color: #7a00cc; /* Darker Neon Purple on hover */
+  background-color: #7a00cc;
+  /* Darker Neon Purple on hover */
 }
 
 .intro-right img {
   width: 280px;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Subtle shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  /* Subtle shadow */
 }
 
 /* Responsive tweaks */
@@ -156,15 +288,48 @@ nav ul li:hover::after {
   }
 }
 
+
+/* image */
+.intro-right {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.profile_pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1.5px solid #7a00cc;
+  box-shadow: 0 4px 10px rgba(21, 20, 20, 0.9);
+
+  /* Smooth up-down floating animation */
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Keyframes for up-down movement */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px); /* You can increase for bigger bounce */
+  }
+}
+
+
+/* about section */
 .about-section {
   display: flex;
-  flex-direction: row; /* Changed from column-reverse to row */
+  flex-direction: row;
+  /* Changed from column-reverse to row */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 60px 20px;
-  background-color: #121212; /* Dark background for section */
+  background-color: #121212;
+  /* Dark background for section */
   text-align: left;
 }
 
@@ -180,7 +345,7 @@ nav ul li:hover::after {
   height: auto;
 }
 
-.about-section > div:not(.about-image) {
+.about-section>div:not(.about-image) {
   flex: 1;
   min-width: 300px;
 }
@@ -188,25 +353,29 @@ nav ul li:hover::after {
 .about-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
 }
 
 .about-section p {
   font-size: 16px;
   line-height: 1.8;
-  color: #d1d1d1; /* Light grey */
+  color: #d1d1d1;
+  /* Light grey */
 }
 
 .about-section .highlight,
 .about-section strong {
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
   font-weight: bold;
 }
 
 .about-section button {
   margin-top: -11px;
   padding: 10px 11px;
-  background-color: #9b00ff; /* Neon Purple */
+  background-color: #9b00ff;
+  /* Neon Purple */
   color: white;
   border: none;
   border-radius: 8px;
@@ -216,12 +385,14 @@ nav ul li:hover::after {
 }
 
 .about-section button:hover {
-  background-color: #7a00cc; /* Darker Neon Purple on hover */
+  background-color: #7a00cc;
+  /* Darker Neon Purple on hover */
 }
 
 /* Projects Section */
 .projects-section {
-  background-color: #111; /* Dark background for section */
+  background-color: #111;
+  /* Dark background for section */
   padding: 60px 20px;
 }
 
@@ -234,7 +405,8 @@ nav ul li:hover::after {
   text-align: center;
   font-size: 36px;
   margin-bottom: 40px;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
 }
 
 .creative {
@@ -244,13 +416,15 @@ nav ul li:hover::after {
 
 .creative h2 {
   font-size: 28px;
-  color: #e0e0e0; /* Light grey for titles */
+  color: #e0e0e0;
+  /* Light grey for titles */
   margin-bottom: 10px;
 }
 
 .creative p {
   font-size: 16px;
-  color: #d1d1d1; /* Light grey */
+  color: #d1d1d1;
+  /* Light grey */
 }
 
 .projects-grid {
@@ -261,9 +435,11 @@ nav ul li:hover::after {
 }
 
 .project-card {
-  background: #1f1f1f; /* Dark grey background */
+  background: #1f1f1f;
+  /* Dark grey background */
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  /* Subtle shadow */
   overflow: hidden;
   width: 100%;
   max-width: 360px;
@@ -287,12 +463,14 @@ nav ul li:hover::after {
 .project-title {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
 }
 
 .project-description {
   font-size: 14px;
-  color: #d1d1d1; /* Light grey */
+  color: #d1d1d1;
+  /* Light grey */
   margin-bottom: 10px;
 }
 
@@ -300,14 +478,16 @@ nav ul li:hover::after {
   display: inline-block;
   margin-right: 10px;
   font-size: 14px;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .project-link:hover {
-  color: #7a00cc; /* Darker Neon Purple */
+  color: #7a00cc;
+  /* Darker Neon Purple */
 }
 
 /* Explore More Button */
@@ -318,23 +498,27 @@ nav ul li:hover::after {
 
 .explore-more a {
   font-size: 16px;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
   text-decoration: none;
   font-weight: 600;
   padding: 10px 20px;
-  border: 2px solid #9b00ff; /* Neon Purple border */
+  border: 2px solid #9b00ff;
+  /* Neon Purple border */
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .explore-more a:hover {
-  background-color: #9b00ff; /* Neon Purple hover */
+  background-color: #9b00ff;
+  /* Neon Purple hover */
   color: white;
 }
 
 /* Contact Section */
 #contact {
-  background-color: #111; /* Dark background */
+  background-color: #111;
+  /* Dark background */
   padding: 60px 20px;
   text-align: center;
 }
@@ -347,12 +531,14 @@ nav ul li:hover::after {
 #contact h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
 }
 
 #contact p {
   font-size: 16px;
-  color: #d1d1d1; /* Light grey */
+  color: #d1d1d1;
+  /* Light grey */
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -366,11 +552,13 @@ nav ul li:hover::after {
 
 .social-icons a {
   font-size: 24px;
-  color: #9b00ff; /* Neon Purple */
+  color: #9b00ff;
+  /* Neon Purple */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #7a00cc; /* Darker Neon Purple */
+  color: #7a00cc;
+  /* Darker Neon Purple */
   transform: scale(1.2);
 }

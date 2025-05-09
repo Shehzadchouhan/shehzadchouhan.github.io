@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Mohd Shehzad</title>
   <link rel="stylesheet" href="contact.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("lReIwE6OjDFyj-zlP"); // Your Public Key
+    })();
+  </script>
 </head>
+
 <body>
 
-<section class="contact-section">
-  <div class="contact-container">
+  <section class="contact-section">
+    <div class="contact-container">
 
-    <!-- Left Side -->
-    <div class="contact-info">
-      <h2>Address</h2>
-      <p><i class="fas fa-map-marker-alt"></i> Loha Bazaar, Malerkotla, Punjab</p>
+      <!-- Left Side -->
+      <div class="contact-info">
+        <h2>Address</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Loha Bazaar, Malerkotla, Punjab</p>
 
-      <h2>Phone</h2>
-      <p><i class="fas fa-phone"></i> +91 99880 59285</p>
+        <h2>Phone</h2>
+        <p><i class="fas fa-phone"></i> +91 99880 59285</p>
 
-      <h2>Email</h2>
-      <p><i class="fas fa-envelope"></i> shehzadchouhan260@gmail.com</p>
+        <h2>Email</h2>
+        <p><i class="fas fa-envelope"></i> shehzadchouhan260@gmail.com</p>
+      </div>
+
+      <!-- Right Side Form -->
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form id="contactForm">
+          <input type="text" name="from_name" placeholder="Your Name" required />
+          <input type="email" name="from_email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit">Send</button>
+          <p class="note" id="statusMessage"></p>
+        </form>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Right Side Form -->
-    <div class="contact-form">
-      <h2>Send a Message</h2>
-      <form id="contactForm">
-        <input type="text" name="from_name" placeholder="Your Name" required />
-        <input type="email" name="from_email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-        <button type="submit">Send</button>
-        <p class="note" id="statusMessage"></p>
-      </form>
+  <!-- Keep in Touch Section -->
+  <section class="keep-in-touch">
+    <h2><u>Keep in Touch</u></h2>
+    <p>My inbox is always open. Whether you have a question or just want to talk more about your projects!<br>
+      Feel free to mail me about any relevant job updates.</p>
+
+    <div class="social-icons">
+      <a href="mailto:shehzadchouhan260@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/shehzad23" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/ShehzadChouhan" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/shehzad_speaks?igsh=NGdrY3d6dXA2aDJs" target="_blank"><i
+          class="fab fa-instagram"></i></a>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- Keep in Touch Section -->
-<section class="keep-in-touch">
-  <h2><u>Keep in Touch</u></h2>
-  <p>My inbox is always open. Whether you have a question or just want to talk more about your projects!<br>
-     Feel free to mail me about any relevant job updates.</p>
-
-  <div class="social-icons">
-    <a href="mailto:shehzadchouhan260@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-    <a href="https://www.linkedin.com/in/shehzad23" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/ShehzadChouhan" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/shehzad_speaks?igsh=NGdrY3d6dXA2aDJs" target="_blank"><i class="fab fa-instagram"></i></a>
-  </div>
-</section>
-
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script src="contact.js"></script>
-
+  <!-- Your JS file -->
+  <script src="contact.js"></script>
 </body>
+
 </html>
