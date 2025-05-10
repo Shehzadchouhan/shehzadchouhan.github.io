@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohd Shehzad | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 
 </head>
+
 <body>
   <header>
     <div class="left">&lt;Mohd Shehzad&gt;</div>
     <nav>
-        <ul>
-           <li><a href="index.html">Home</a></li>
-<li><a href="about/about.html">About</a></li>
-<li><a href="projects/projects.html">Projects</a></li>
-<li><a href="contact/contact.html">Contact</a></li>
-          </ul>
-           
+      <ul>
+        <li><a target="_blank" href="index.html">Home</a></li>
+        <li><a target="_blank" href="about/about.html">About</a></li>
+        <li><a target="_blank" href="projects/projects.html">Projects</a></li>
+        <li><a target="_blank" href="contact/contact.html">Contact</a></li>
+      </ul>
+
     </nav>
   </header>
 
- <!-- Hero Section -->
-<section id="home" class="hero">
-  <div class="intro-container">
-    <!-- Left Side Content -->
-    <div class="intro-left">
-      <h2>Hello friend!</h2>
-      <h2>I am </h2><h1><div class="highlight">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohd Shehzad</div></h1>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="intro-container">
+      <!-- Left Side Content -->
+      <div class="intro-left">
+        <h2>Hello friend!</h2>
+        <h2>I am </h2>
+        <h1>
+          <div class="highlight">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohd Shehzad</div>
+        </h1>
 
-      <!-- Typing Text -->
-      <div class="typing-text" id="typing"></div>
+        <!-- Typing Text -->
+        <div class="typing-text" id="typing"></div>
 
-      <!-- Paragraphs -->
-      <p>🚀 A passionate Software Developer in Punjab,India.</p>
-      <p>⚡ Exploring opportunities and side projects.</p>
-      <p>💻 My main tech stack currently is frontend developer in combination with C++.</p>
+        <!-- Paragraphs -->
+        <p>🚀 A passionate Software Developer in Punjab,India.</p>
+        <p>⚡ Exploring opportunities and side projects.</p>
+        <p>💻 My main tech stack currently is frontend developer in combination with C++.</p>
 
-      <!-- Social Buttons -->
-      <div class="social-links">
-        <a href="https://github.com/ShehzadChouhan" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/shehzad23" target="_blank">LinkedIn</a>
+        <!-- Social Buttons -->
+        <div class="social-links">
+          <a href="https://github.com/ShehzadChouhan" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/shehzad23" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Right Side Profile Image -->
+      <div class="intro-right">
+        <img src="assets/profile_pic.jpg" alt="Mohd Shehzad" class="profile_pic" />
       </div>
     </div>
-
-    <!-- Right Side Profile Image -->
-    <div class="intro-right">
-      <img src="assets/profile_pic.jpg" alt="Mohd Shehzad" class="profile_pic" />
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Divider -->
@@ -69,15 +75,21 @@
         Hey there! I'm <span class="highlight">Mohd Shehzad</span>, and I've been passionate about computers
         since I was young. Currently, I'm a <strong>B.Tech Computer Science student</strong> exploring the world of
         <strong>technology</strong> and <strong>web development</strong>.
-        I specialize in <strong>MERN stack development</strong> and love creating innovative digital solutions.
+        I specialize in <strong>development</strong> and love creating innovative digital solutions.
         My journey is all about learning, building, and refining my skills.
-        When I'm not coding, I enjoy <strong>cricket</strong>, binge-watching <strong>tech videos</strong>, and exploring new ideas in
+        When I'm not coding, I enjoy <strong>Cricket</strong>, <strong> Travelling</strong> ,<strong>tech videos</strong>, and
+        exploring new ideas in
         <strong>software development</strong>. 🚀
       </p>
       <button onclick="window.open('assets/Mohd Shehzad Resume.pdf')" target="_blank">📄 View Resume</button>
-    </div>
+      <span class="explore-more">
+        <a href="about/about.html" target="_blank">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </span>
+
   </section>
-  
+
   <!-- Divider -->
   <hr class="section-divider" />
 
@@ -86,44 +98,66 @@
     <div class="container">
       <h2 class="section-title"><u>My Projects</u></h2>
       <div class="creative">
-        <h2>💻 All Creative Works.</h2>
+        <h2>💻 My Creative Works.</h2>
         <p>Here's some of my projects that I have worked on.</p>
       </div>
 
       <div class="projects-grid">
         <!-- Project Cards -->
         <div class="project-card">
-          <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image"/>
+          <img src="assets/gym.png.png" alt="Project 1" class="project-image" />
           <div class="project-content">
-            <h3 class="project-title">Project Title 1</h3>
-            <p class="project-description">Brief description of Project 1...</p>
-            <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank">Live Site</a>
-            <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank">GitHub Repo</a>
+            <h3 class="project-title">Gym Site</h3>
+            <p class="project-description">Gym Intro Page is a responsive fitness-themed landing website built with
+              HTML, CSS, and JavaScript. It features a sleek design with background video support, BMI calculator, and
+              smooth navigation through sections like Home, About, Contact, and Calculator. The project emphasizes user
+              interaction and a modern UI/UX, making it suitable for gyms, fitness coaches, or personal trainers. It
+              also includes a dark-themed interface with consistent styling and functional form elements.</p>
+            <a href="https://shehzadchouhan.github.io/gym-intro-page/" class="project-link" target="_blank">
+              <i class="fas fa-link"></i> Live
+            </a>
+            <a href="https://github.com/Shehzadchouhan/gym-intro-page.git" class="project-link" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
         <div class="project-card">
-          <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image"/>
+          <img src="assets/Proj_1_phy_Exp.png" alt="Project 1" class="project-image" />
           <div class="project-content">
-            <h3 class="project-title">Project Title 1</h3>
-            <p class="project-description">Brief description of Project 1...</p>
-            <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank">Live Site</a>
-            <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank">GitHub Repo</a>
+            <h3 class="project-title">Physics lab calculation</h3>
+            <p class="project-description">The Physics Experiment Website is a student-friendly platform designed to
+              demonstrate key physics concepts through simple, interactive experiments.
+              It provides clear explanations, visuals, and step-by-step procedures for better understanding.
+              The goal is to make learning engaging and accessible.
+              It serves as both a learning aid and revision tool for students preparing for physics practical exams.</p>
+            <a href="https://shehzadchouhan.github.io/WebHosting_physics-experiments/" class="project-link"
+              target="_blank"> <i class="fas fa-link"></i>Live</a>
+            <a href="https://github.com/Shehzadchouhan/physics-experiments.git" class="project-link" target="_blank"> <i
+                class="fab fa-github"></i>Code
+            </a>
           </div>
         </div>
         <div class="project-card">
-          <img src="Proj_1_phy_Exp.png" alt="Project 1" class="project-image"/>
+          <img src="assets/track.png.png" alt="Project 1" class="project-image" />
           <div class="project-content">
-            <h3 class="project-title">Project Title 1</h3>
-            <p class="project-description">Brief description of Project 1...</p>
-            <a href="https://shehzadchouhan.github.io/Web-Hosting/" class="project-link" target="_blank">Live Site</a>
-            <a href="https://github.com/Shehzadchouhan/Web-Hosting.git" class="project-link" target="_blank">GitHub Repo</a>
+            <h3 class="project-title">Track Expenser</h3>
+            <p class="project-description">his project is a personal expense tracker that helps users track and manage
+              their daily spending. With the Firebase login feature, each user can sign up and log in securely, ensuring
+              their expense data is private and stored separately. Once logged in, users can add, view, or manage their
+              expenses. This makes the app useful for budget planning, saving habits, and financial awareness.</p>
+            <a href="https://shehzadchouhan.github.io/Track_Expenser/" class="project-link" target="_blank">Live
+            </a>
+            <a href="https://github.com/Shehzadchouhan/Track_Expenser.git" class="project-link" target="_blank"> <i
+                class="fab fa-github"></i>Code</a>
           </div>
         </div>
       </div>
       <!-- Explore More -->
-<div class="explore-more">
-  <a href="https://github.com/ShehzadChouhan?tab=repositories" target="_blank">🔎 Explore More Projects</a>
-</div>
+      <div class="explore-more">
+        <a href="projects/projects.html" target="_blank">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
     </div>
   </section>
@@ -137,17 +171,19 @@
       <h2><u>Keep in Touch</u></h2>
       <p>My inbox is always open. Whether you have a question or just want to talk more about your projects!<br>
         Feel free to mail me about any relevant job updates.</p>
-  
+
       <div class="social-icons">
-        <a href="mailto:shehzadchouhan260@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://mail.google.com/mail/u/0/" target="_blank"><i class="fas fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/shehzad23" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/ShehzadChouhan" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/shehzad_speaks?igsh=NGdrY3d6dXA2aDJs" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/shehzad_speaks?igsh=NGdrY3d6dXA2aDJs" target="_blank"><i
+            class="fab fa-instagram"></i></a>
       </div>
     </div>
   </section>
-  
+
 
   <script src="script.js"></script>
 </body>
+
 </html>

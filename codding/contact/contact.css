@@ -5,13 +5,14 @@ body {
   color: #fff;
 }
 
+/* Main Contact Section */
 .contact-section {
   padding: 50px 20px;
   max-width: 1100px;
   margin: auto;
 }
 
-.contact-container {
+.contact-main-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -76,11 +77,13 @@ body {
   background-color: #c084fc;
   color: #000;
   font-weight: bold;
-  cursor: not-allowed;
-  border-radius: 6px;
-}
-.contact-form button:hover{
   cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #a259f7;
 }
 
 .contact-form .note {
@@ -89,30 +92,55 @@ body {
   margin-top: 10px;
 }
 
-/* Keep in Touch */
-.keep-in-touch {
-  padding: 40px 20px;
+/* Footer Keep in Touch Section */
+#contact-footer {
+  padding: 50px 20px;
   text-align: center;
-  border-top: 1px solid #222;
 }
 
-.keep-in-touch h2 {
-  color: #c084fc;
-  margin-bottom: 10px;
+.contact-footer-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.keep-in-touch p {
-  color: #ccc;
+#contact-footer h2 {
+  font-size: 32px;
   margin-bottom: 20px;
+  color: #9b00ff;
+}
+
+#contact-footer p {
+  font-size: 16px;
+  color: #d1d1d1;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  padding: 10px 0;
 }
 
 .social-icons a {
-  color: #c084fc;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.3s;
+  font-size: 28px;
+  color: #b100ff;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(123, 0, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
 }
 
 .social-icons a:hover {
-  color: #fff;
+  transform: scale(1.2) rotate(5deg);
+  background-color: #7a00cc;
+  color: white;
+  box-shadow: 0 6px 16px rgba(123, 0, 255, 0.6);
 }

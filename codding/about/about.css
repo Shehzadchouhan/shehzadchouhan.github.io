@@ -1,7 +1,8 @@
 /* Global Styles */
 body {
   background-color: #0a0a0a;
-  color: #e0e0e0; /* Light grey text */
+  color: #e0e0e0;
+  /* Light grey text */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,8 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 60px 20px;
-  background-color: #111; /* Dark background */
+  padding: 50px 150px;
 }
 
 .about-left {
@@ -24,43 +24,65 @@ body {
 
 .about-left h1 {
   font-size: 36px;
-  color: #9b00ff; /* Neon Purple */
+  color: #eeedee;
+  /* Neon Purple */
   margin-bottom: 10px;
 }
 
 .about-left h2 {
   font-size: 24px;
-  color: #e0e0e0; /* Light grey */
+  color: #7a00cc;
+  /* Light grey */
   margin-bottom: 20px;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.8;
-  color: #d1d1d1; /* Light grey */
+  color: #d1d1d1;
+  /* Light grey */
   margin-bottom: 10px;
 }
-/* Social Icons */
-.social-icons {
-    margin-top: 20px;
+
+/* Social Icons Container */
+.icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 25px;
+  padding: 1px 0;
+  gap: 20px;
 }
 
-.social-icons a {
-    color: #9b00ff; /* Neon Purple */
-    font-size: 24px;
-    margin-right: 20px;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* Social Icons Links */
+.icons a {
+  color: #f9f8f9; /* Light color for text */
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #232323; /* Dark background for icons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 24px; /* Adjust font size */
 }
 
-.social-icons a:hover {
-    color: #7a00cc; /* Darker Neon Purple */
+/* Hover Effect */
+.icons a:hover {
+  color: #fff; /* White on hover */
+  background-color: #0e0e0e; /* Darker Neon Purple */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(25, 7, 36, 0.5);
 }
 
-.social-icons .fab,
-.social-icons .fas {
-    font-size: 28px; /* Larger icons */
+/* Icon Sizes */
+.icons .fab,
+.icons .fas {
+  font-size: 28px; /* Larger icons */
 }
+
 
 
 /* About Content */
@@ -78,18 +100,9 @@ body {
 }
 
 .highlight {
-  color: #9b00ff; /* Neon Purple for highlighting */
+  color: #9b00ff;
+  /* Neon Purple for highlighting */
   font-weight: bold;
-}
-
-/* About Image */
-.intro-image {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Subtle shadow */
-  object-fit: cover;
 }
 
 /* Responsive Styles */
@@ -107,11 +120,97 @@ body {
     width: 200px;
   }
 
-  .social-icons a {
+  .icons a {
     margin-right: 15px;
   }
 
   .about-right {
     padding-left: 0;
   }
+}
+
+/* Contact Section */
+#contact {
+
+  /* Dark background */
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #9b00ff;
+  /* Neon Purple */
+}
+
+#contact p {
+  font-size: 16px;
+  color: #d1d1d1;
+  /* Light grey */
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  padding: 10px 0;
+}
+
+.social-icons a {
+  font-size: 28px;
+  color: #b100ff;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(123, 0, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.2) rotate(5deg);
+  background-color: #7a00cc;
+  color: white;
+  box-shadow: 0 6px 16px rgba(123, 0, 255, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+    .about-left h1 {
+        font-size: 30px; /* Adjusted font size for mobile */
+    }
+
+    .about-left h2 {
+        font-size: 20px; /* Adjusted font size for mobile */
+    }
+
+    .about-right p {
+        font-size: 14px; /* Adjusted paragraph font size */
+    }
+
+    .social-icons a {
+        font-size: 24px; /* Smaller icons on mobile */
+    }
+}
+
+
+.icons a:focus {
+    outline: 2px solid #9b00ff; /* Add focus outline for better keyboard navigation */
+    outline-offset: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .icons {
+        gap: 15px; /* Reduce gap between icons for mobile */
+    }
 }

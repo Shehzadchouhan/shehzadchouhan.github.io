@@ -19,7 +19,7 @@ header {
 }
 
 header .left {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: monospace;
   color: #f9f7fa;
@@ -144,6 +144,8 @@ nav ul li {
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease;
+  font-size: 1em;
+
 }
 
 nav ul li a {
@@ -212,7 +214,7 @@ nav ul li:hover::after {
 }
 
 .intro-left h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 0.4rem;
   font-weight: bold;
   color: #e0e0e0;
@@ -225,7 +227,7 @@ nav ul li:hover::after {
 }
 
 .typing-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: monospace;
   color: #9b00ff;
   /* Neon Purple */
@@ -237,7 +239,7 @@ nav ul li:hover::after {
   margin: 0.5rem 0;
   color: #d1d1d1;
   /* Light grey for description */
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .social-links {
@@ -380,7 +382,7 @@ nav ul li:hover::after {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   transition: background-color 0.3s ease;
 }
 
@@ -495,9 +497,20 @@ nav ul li:hover::after {
   text-align: center;
   margin-top: 40px;
 }
+.explore-more a i {
+  font-size: 15px;
+  color: #7a00cc;
+  transition: transform 0.3s ease;
+}
+
+.explore-more a:hover i {
+  transform: translateX(5px);
+  color: #440066;
+}
+
 
 .explore-more a {
-  font-size: 16px;
+  font-size: 12px;
   color: #9b00ff;
   /* Neon Purple */
   text-decoration: none;
@@ -542,23 +555,40 @@ nav ul li:hover::after {
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin-top: 20px;
+  gap: 30px;
+  margin-top: 25px;
+  padding: 10px 0;
 }
 
 .social-icons a {
-  font-size: 24px;
-  color: #9b00ff;
-  /* Neon Purple */
-  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 28px;
+  color: #b100ff;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(123, 0, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
 }
 
 .social-icons a:hover {
-  color: #7a00cc;
-  /* Darker Neon Purple */
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(5deg);
+  background-color: #7a00cc;
+  color: white;
+  box-shadow: 0 6px 16px rgba(123, 0, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .header, .projects-grid {
+    flex-direction: column;
+  }
+  .intro-left, .intro-right {
+    width: 100%;
+  }
 }
