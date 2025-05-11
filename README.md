@@ -40,10 +40,6 @@ Welcome to my **personal developer portfolio website**! This site highlights my 
 
 ---
 
-## 🌍 Live Demo
-
-[🔗 View Portfolio Live](https://your-portfolio-link.com) <!-- Add your deployed link -->
-
 ---
 
 ## 🚀 Future Enhancements
