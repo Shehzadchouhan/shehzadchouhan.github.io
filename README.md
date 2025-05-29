@@ -6,8 +6,15 @@ Welcome to my **personal developer portfolio website**! This site highlights my 
 
 ## 📸 Screenshot
 
-![Portfolio Screenshot](assets/screenshot.png) <!-- Replace with actual path -->
-
+##Screenshots-
+#### Home Page and About Page
+![Home Page](./assets/homeabout.png)
+#### project page
+![Home Page](./assets/proj.png)
+#### resume page
+![Home Page](./assets/resume.png)
+#### List of projects
+![Home Page](./assets/lp.png)
 ---
 
 ## ✨ Features
@@ -42,7 +49,7 @@ Welcome to my **personal developer portfolio website**! This site highlights my 
 
 ## 🌍 Live Demo
 
-[🔗 View Portfolio Live](https://your-portfolio-link.com) <!-- Add your deployed link -->
+[🔗 View Portfolio Live](https://shehzadchouhan.netlify.app/) <!-- Add your deployed link -->
 
 ---
 
