@@ -4,6 +4,12 @@ Welcome to my **personal developer portfolio website**! This site highlights my 
 
 ---
 
+## 🌍 Live Demo
+
+[🔗 View Portfolio Live](https://shehzadchouhan.netlify.app/) <!-- Add your deployed link -->
+
+---
+
 ## 📸 Screenshot
 
 ##Screenshots-
@@ -44,12 +50,6 @@ Welcome to my **personal developer portfolio website**! This site highlights my 
 - **HTML5**
 - **CSS3** (Media queries, Flexbox, transitions)
 - **JavaScript** (for interactivity)
-
----
-
-## 🌍 Live Demo
-
-[🔗 View Portfolio Live](https://shehzadchouhan.netlify.app/) <!-- Add your deployed link -->
 
 ---
 
